@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="843.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ith.eventparcerfx1.controllers.FoursquareController">
+
+    <children>
+        <TabPane layoutX="9.0" layoutY="7.0" prefHeight="830.0" prefWidth="1052.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Fourqsuare API">
+                    <content>
+                        <fx:include fx:id="foursquare" source="TabFoursquare.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Hotwire hotels">
+                    <content>
+                        <fx:include fx:id="hotwire" source="TabHotwire.fxml" />
+                    </content>
+                </Tab>
+                <Tab text="Seatwave API">
+                    <content>
+                        <fx:include fx:id="poi" source="TabSeatwave.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+        <TextArea fx:id="log" editable="false" layoutX="21.0" layoutY="514.0" prefHeight="318.0" prefWidth="1031.0" />
+       
+    </children>
+</AnchorPane>
